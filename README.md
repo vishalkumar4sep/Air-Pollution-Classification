@@ -1,7 +1,5 @@
 # Air Quality Classifier - Deep Learning Project
 
-![Cover image](https://github.com/nileshparab42/Air-Pollution-Classification/blob/main/docs/img/0.png)
-
 
 ## Project Overview
 
@@ -18,7 +16,6 @@ This deep learning project focuses on building a robust air quality classifier f
 7. Results
 8. Dependencies
 9. How to Use
-10. License
 
 ## Project Structure
 ```
@@ -82,26 +79,17 @@ You can use your own dataset for training and evaluation. Ensure that it is appr
 ## Models <a name="models"></a>
 
 ### Functional API with MobileNet and ANN <a name="functional-api-model"></a>
-![Functional api](https://github.com/nileshparab42/Air-Pollution-Classification/blob/main/docs/img/1.png)
 
 
 The first deep learning model is built using the Functional API. MobileNet is used as a pre-trained model for feature extraction, and an Artificial Neural Network (ANN) is added on top of it for classification. This model is suitable for classifying air quality from images.
 
 ### Sequential API with VGG16 <a name="sequential-api-model"></a>
-![Transfer Learning](https://github.com/nileshparab42/Air-Pollution-Classification/blob/main/docs/img/2.png)
-
-
 The second model is constructed using the Sequential API and utilizes the VGG16 architecture with transfer learning. This approach is effective for leveraging pre-trained weights from VGG16 and fine-tuning them for air quality classification.
 
 ### Web Application <a name="web-application"></a>
-![Web App](https://github.com/nileshparab42/Air-Pollution-Classification/blob/main/docs/img/3.png)
-
-
 The project includes a web application built with Flask, allowing users to upload images and classify air quality using the VGG16 model. The web application provides a user-friendly interface for real-time air quality assessment.
 
 ## Results <a name="results"></a>
-![Cover image](https://github.com/nileshparab42/Air-Pollution-Classification/blob/main/docs/img/4.png)
-
 In the air quality classifier project, we observed varying levels of accuracy between the two deep learning models employed:
 
 * Functional API with MobileNet and ANN: While this model, combining MobileNet for feature extraction and an Artificial Neural Network (ANN) for classification, demonstrated reasonable performance, it achieved an accuracy of 20% on the test dataset. Although the accuracy might be lower than desired, it is essential to consider fine-tuning hyperparameters, increasing the dataset size, or exploring alternative architectures to potentially improve the model's performance further.
@@ -130,7 +118,7 @@ pip install -r requirements.txt
 
 1. Clone this repository to your local machine.
 ```
-git clone https://github.com/nileshparab42/Air-Pollution-Classification.git
+git clone https://github.com/vishalkumar4sep/Air-Pollution-Classification
 cd Air-Pollution-Classification
 ```
 2. Train and evaluate the deep learning models using the Jupyter notebooks provided in the models/ directory.
@@ -143,6 +131,3 @@ cd webapp
 python app.py
 ```
 5. Access the web application by opening a web browser and going to `http://localhost:5000`.
-
-## License <a name="license"></a>
-This project is licensed under the MIT License. Feel free to use, modify, and distribute it as per the terms of the license. See the LICENSE file for more details.
